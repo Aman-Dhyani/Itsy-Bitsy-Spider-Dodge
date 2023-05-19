@@ -1,0 +1,24 @@
+
+/* running-tree anime */
+/* running-tree anime */
+@keyframes running-tree {
+    0% {
+        left: 120%;
+    }
+
+    100% {
+        left: -30%;
+    }
+}
+
+/* running-road-lines anime */
+/* running-road-lines anime */
+@keyframes running-road-lines {
+    0% {
+        left: 120%;
+    }
+
+    100% {
+        left: -30%;
+    }
+}

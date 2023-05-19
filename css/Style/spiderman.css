@@ -1,0 +1,165 @@
+#spider-man {
+    height: 120px;
+    width: 100px;
+    position: absolute;
+    transition:0.5s;
+    z-index: 1;
+}
+
+/* spiderman - head */
+.sm-face {
+    height: 25px;
+    width: 20px;
+    position: absolute;
+    top: 12%;
+    border-radius: 50%;
+    background-color: #ff0000;
+    z-index: 3;
+}
+
+.sm-face::before {
+    content: "";
+    height: 14px;
+    width: 70%;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    background-image:
+        linear-gradient(to bottom right, transparent 50%, #000000 0);
+    border-radius: 10px;
+    transform: rotate(290deg);
+}
+
+.sm-face::after {
+    content: "";
+    height: 10px;
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    background-image:
+        linear-gradient(to bottom right, transparent 50%, #ffffff 0);
+    border-radius: 10px;
+    transform: rotate(295deg);
+}
+
+/* spiderman - body */
+.sm-body {
+    height: 40px;
+    width: 15px;
+    background: linear-gradient(#ff0400 60%, #009dff 40%);
+    z-index: 2;
+    border-radius: 15px;
+}
+
+/* spiderman - arms */
+.sm-arms {
+    height: 22px;
+    width: 22px;
+    border-radius: 10px;
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    border-right: 8px solid #009dff;
+    border-bottom: 8px solid red;
+    transition: 0.5s;
+}
+
+/* spiderman - legs */
+.sm-legs {
+    height: 30px;
+    width: 20px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    border-top: 8px solid #009dff;
+    border-right: 8px solid red;
+    transition: 0.5s;
+}
+
+/* ------ animations ----- */
+/* --- DEFAULT ANIMATIONS --- */
+/* --- DEFAULT ANIMATIONS --- */
+.sm-def {
+    bottom: 10%;
+    left: 5%;
+    animation: sm-def 0.4s linear infinite 0.5s;
+}
+
+.sm-face-def {
+    transform: rotate(0deg);
+}
+
+.sm-def-r-arm {
+    animation: sm-def-arms 0.6s linear infinite;
+    z-index: 1;
+}
+
+.sm-def-l-arm {
+    animation: sm-def-arms 0.6s linear infinite 0.3s;
+    z-index: 3;
+}
+
+.sm-def-r-leg {
+    animation: sm-def-legs 0.6s linear infinite 0.3s;
+    z-index: 1;
+}
+
+.sm-def-l-leg {
+    animation: sm-def-legs 0.6s linear infinite;
+    z-index: 3;
+}
+
+/* --- JUMP ANIMATIONS --- */
+/* --- JUMP ANIMATIONS --- */
+.sm-jump{
+    bottom: 10%;
+    left: 5%;
+    animation: sm-jump .9s linear 1;
+}
+
+.sm-face-jump{
+    top: 15%;
+    left: 45%;
+    transform: rotate(30deg);
+}
+
+.sm-jump-r-leg {
+    animation: sm-jump-legs .9s linear 1;
+    z-index: 1;
+}
+
+.sm-jump-l-leg {
+    animation: sm-jump-legs .9s linear 1;
+    z-index: 3;
+}
+
+/* --- SLIDE ANIMATIONS --- */
+/* --- SLIDE ANIMATIONS --- */
+.sm-slide {
+    animation: sm-slide 0.7s linear 1;
+}
+
+.sm-face-slide {
+    transform: rotate(-10deg);
+}
+
+.sm-slide-r-arm {
+    animation: sm-slide-arms 0.7s linear 1;
+    z-index: 1;
+}
+
+.sm-slide-l-arm {
+    animation: sm-slide-arms 0.7s linear 1;
+    z-index: 3;
+}
+
+.sm-slide-r-leg {
+    animation: sm-slide-legs 0.7s linear 1;
+    z-index: 1;
+}
+
+.sm-slide-l-leg {
+    animation: sm-slide-legs 0.7s linear 1 0.2s;
+    z-index: 3;
+}

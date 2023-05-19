@@ -1,0 +1,154 @@
+/* DR octavius */
+#dr-octopus {
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    bottom: 10%;
+    transform: rotateY(-20deg);
+    transition: 2s;
+}
+
+.oct-def {
+    left: 120%;
+}
+
+.oct-coming {
+    left: 85%;
+}
+
+/* DR octavius face */
+.doc-face {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-color: sandybrown;
+    border-radius: 5px;
+    border-top: 5px solid #161616;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+/* DR octavius body and legs */
+.doc-body,
+.doc-legs {
+    position: absolute;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    z-index: 2;
+}
+
+/* DR octavius body */
+.doc-body {
+    height: 50px;
+    width: 15px;
+    background: linear-gradient(#2a2a2a 70%, black 30%);
+    border-radius: 5px;
+    left: 56%;
+}
+
+/* DR octavius legs */
+.doc-legs {
+    height: 45px;
+    width: 8px;
+    top: 58%;
+    left: 58%;
+    border-bottom: 10px dotted rgb(171, 171, 171);
+}
+
+/* DR octavius arms */
+.doc-arms {
+    height: 30px;
+    width: 40px;
+    border: 8px solid black;
+    border-bottom: none;
+    border-radius: 5px;
+    position: absolute;
+    left: 51%;
+}
+
+/* DR octavius tentacles */
+/* DR octavius tentacles top */
+.doc-top-tentacles {
+    height: 100px;
+    width: 40px;
+    border-right: 10px dashed #111111;
+    border-top: 10px double #111111;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#doc-ttL {
+    top: 10%;
+    left: 40%;
+    z-index: -1;
+}
+
+#doc-ttR {
+    top: 3%;
+    left: 55%;
+    z-index: -1;
+}
+
+/* DR octavius tentacles bottom */
+.doc-bottom-tentacles {
+    height: 110px;
+    width: 20px;
+    position: absolute;
+    border-right: 10px dashed #111111;
+    border-top: 7px solid #111111;
+    border-bottom: 7px double #111111;
+    border-radius: 10px;
+}
+
+#doc-btL {
+    border-top: none;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+}
+
+#doc-btR {
+    left: 65%;
+    top: 50%;
+    z-index: -1;
+}
+
+/*  doc weapons */
+#doc-pipe {
+    position: absolute;
+    bottom: 35%;
+    left: 1120%;
+    z-index: 3;
+}
+
+.p1,
+.p3 {
+    height: 100px;
+    width: 20px;
+    background-color: #4f4f4f;
+    border-radius: 10px;
+}
+
+.p2 {
+    height: 90px;
+    width: 230px;
+    background-color: #616161;
+}
+
+/*  doc animes */
+.doc-face-anime {
+    animation: oct-face 4s linear infinite 5s;
+}
+
+.doc-ttL-anime {
+    animation: tenticlesL-top 4s linear infinite 5s;
+}
+
+.doc-ttR-anime {
+    animation: tenticlesR-top 4s linear infinite 5s;
+}
+
+.pipe-anime{
+    animation: pipe-anime 4s linear infinite 5s;
+}

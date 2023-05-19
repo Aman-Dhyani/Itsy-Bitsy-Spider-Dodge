@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/goblin.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/Style/NWH.css">
+    <link rel="stylesheet" href="/css/Animes/NWHAnime.css">
+    <link rel="stylesheet" href="/css/Style/spiderman.css">
+    <link rel="stylesheet" href="/css/Animes/spidermanAnime.css">
+    <link rel="stylesheet" href="/css/Style/goblin.css">
+    <link rel="stylesheet" href="/css/Animes/goblinAnime.css">
+    <link rel="stylesheet" href="/css/Style/octavius.css">
+    <link rel="stylesheet" href="/css/Animes/octaviusAnime.css">
+    <title>Itsy Bitsy Spider Dodge</title>
+</head>
+
+<body>
+    <div class="container flexer">
+        <!-- GAME AREA -->
+        <div class="game-area flexer">
+            <!-- RUNNING BG -->
+            <div class="running-bg flexer">
+                <!-- ABOUT TREE -->
+                <div class="running-tree flexer">
+                    <div class="tree flexer">
+                        <div class="tree-stems"></div>
+                        <div class="tree-block"></div>
+                    </div>
+                    <div class="tree flexer">
+                        <div class="tree-stems"></div>
+                        <div class="tree-block"></div>
+                    </div>
+                </div>
+
+                <!-- ABOUT ROAD -->
+                <div class="running-road flexer">
+                    <div class="road-lines"></div>
+                    <div class="road-lines"></div>
+                    <div class="road-lines"></div>
+                </div>
+
+                <!-- SPIDER-MAN -->
+                <div id="spider-man" class="sm-def flexer">
+                    <span class="sm-face sm-face-def"></span>
+                    <span class="sm-body"></span>
+                    <span class="sm-arms sm-def-r-arm"></span>
+                    <span class="sm-arms sm-def-l-arm"></span>
+                    <span class="sm-legs sm-def-r-leg"></span>
+                    <span class="sm-legs sm-def-l-leg"></span>
+                </div>
+
+                <!-- GOBY -->
+                <div id="green-goblin" class="flexer">
+                    <span class="g-face"><span>🕶</span></span>
+                    <span class="g-body"></span>
+                    <span class="g-Arms g-leg-arms"></span>
+                    <span class="g-Legs g-leg-arms"></span>
+                    <span class="g-glider"></span>
+                    <span id="g-bs1" class="g-boosters"></span>
+                    <span id="g-bs2" class="g-boosters"></span>
+                    <span id="g-bt1" class="g-bullets"></span>
+                    <span id="g-bt2" class="g-bullets"></span>
+                </div>
+
+                <!-- OCTAVIUS -->
+                <div id="dr-octopus" class="oct-def flexer">
+                    <div class="doc-face"><span>🕶</span></div>
+                    <div class="doc-body"></div>
+                    <div class="doc-arms"></div>
+                    <div class="doc-legs"></div>
+
+                    <div id="doc-ttL" class="doc-top-tentacles"></div>
+                    <div id="doc-ttR" class="doc-top-tentacles"></div>
+                    <div id="doc-btL" class="doc-bottom-tentacles"></div>
+                    <div id="doc-btR" class="doc-bottom-tentacles"></div>
+                </div>
+
+                <!-- OCTAVIUS OBSTACLE PIPE -->
+                <div id="doc-pipe" class="doc-pipe flexer">
+                    <div class="p1"></div>
+                    <div class="p2"></div>
+                    <div class="p3"></div>
+                </div>
+
+                <!-- scored-->
+                <div class="scores-cont flexer">
+                    <div class="scores"></div>
+                    <div class="high-scores"></div>
+                </div>
+
+            </div>
+            <div role="button" class="play flexer" onclick="startTheGame()">PLAY</div>
+        </div>
+    </div>
+
+    <script defer src="/js/NWH.JS"></script>
+</body>
+
+</html>

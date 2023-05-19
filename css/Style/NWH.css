@@ -1,0 +1,152 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+/* DISPLAY FLEX */
+.flexer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* UI CONTAINER */
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+/* GAME AREA & RUNNING BG */
+.game-area,
+.running-bg {
+    height: 92vh;
+    width: 95%;
+    border-radius: 10px;
+}
+
+/* GAME AREA */
+.game-area {
+    outline: 1px solid rgba(255, 255, 255, 0.249);
+}
+
+/* RUNNING BG */
+.running-bg {
+    position: absolute;
+    flex-direction: column;
+    background: linear-gradient(skyblue 0%, skyblue 55%,
+            #30b500 55%, #30b500 70%,
+            #393939 70%, #393939 100%);
+    justify-content: flex-end;
+}
+
+/* ABOUT TREE */
+.running-tree {
+    height: 35vh;
+    width: 100%;
+    bottom: 0%;
+    gap: 30%;
+    align-items: flex-end;
+    filter: blur(2px);
+}
+
+.tree {
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+    position: absolute;
+    left: 120%;
+    transition: 0.5s;
+}
+
+.tree-stems {
+    height: 80%;
+    width: 100%;
+    background-color: green;
+    border-radius: 20px;
+}
+
+.tree-block {
+    height: 20%;
+    width: 20%;
+    background-color: #a02a2a;
+}
+
+/* TREE ANIME */
+.tree:nth-child(1) {
+    animation: running-tree 4s linear infinite 1s;
+}
+
+.tree:nth-child(2) {
+    animation: running-tree 4s linear infinite 3s;
+}
+
+/* ABOUT ROAD */
+.running-road {
+    height: 30vh;
+    width: 100%;
+    gap: 30%;
+}
+
+.road-lines {
+    height: 10px;
+    width: 10%;
+    background-color: #868686;
+    position: absolute;
+}
+
+/* --- play --- */
+.play {
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    top: 30%;
+    font-size: 25px;
+    font-family: monospace;
+    letter-spacing: 5px;
+    background-color:  #ffb300;
+    color: #000000;
+    border: 5px double  #ff9d00;
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 5;
+}
+
+/* --- Scores --- */
+.scores-cont {
+    width: 90%;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 20px;
+    color: #009c00;
+    position: absolute;
+    top: 10px;
+}
+
+.scores{
+    margin-left: 20px;
+}
+
+.high-scores{
+    margin-right: 20px;
+}
+
+/* ROAD ANIME */
+.road-lines:nth-child(1) {
+    animation: running-road-lines 3s linear infinite;
+}
+
+.road-lines:nth-child(2) {
+    left: 120%;
+    animation: running-road-lines 3s linear infinite 1s;
+}
+
+.road-lines:nth-child(3) {
+    left: 120%;
+    animation: running-road-lines 3s linear infinite 2s;
+}
+
+.hide{
+    display: none;
+}

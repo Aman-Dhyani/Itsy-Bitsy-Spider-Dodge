@@ -1,0 +1,148 @@
+/* doc effect */
+@keyframes oct-coming{
+    0%{
+        transform: rotateY(0deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    21% {
+        transform: rotate(5deg);
+    }
+
+    40%{
+        transform: rotate(5deg);
+    }
+
+    41% {
+        transform: rotate(-5deg);
+    }
+
+    85% {
+        transform: rotate(-5deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+/* doc top right tenticle anime  */
+@keyframes tenticlesR-top {
+    0% {
+        top: 10%;
+        left: 40%;
+        transform: rotate(0deg);
+    }
+
+    20% {
+        top: 10%;
+        left: 40%;
+        transform: rotate(0deg);
+    }
+
+    21% {
+        top: 20%;
+        left: 80%;
+        transform: rotate(90deg);
+    }
+
+    40% {
+        top: 20%;
+        left: 80%;
+        transform: rotate(90deg);
+    }
+
+    41% {
+        top: 20%;
+        left: 20%;
+        transform: rotate(-90deg);
+    }
+
+    85% {
+        top: 20%;
+        left: 20%;
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        top: 10%;
+        left: 40%;
+        transform: rotate(0deg);
+    }
+}
+
+/* doc top left tenticle anime  */
+@keyframes tenticlesL-top {
+    0% {
+        top: 3%;
+        left: 55%;
+        transform: rotate(0deg);
+    }
+
+    20% {
+        top: 3%;
+        left: 55%;
+        transform: rotate(0deg);
+    }
+
+    21% {
+        top: 25%;
+        left: 80%;
+        transform: rotate(90deg);
+    }
+
+    40% {
+        top: 25%;
+        left: 80%;
+        transform: rotate(90deg);
+    }
+
+    41% {
+        top: 30%;
+        left: 20%;
+        transform: rotate(-90deg);
+    }
+
+    85% {
+        top: 30%;
+        left: 20%;
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        top: 3%;
+        left: 55%;
+        transform: rotate(0deg);
+    }
+}
+
+/*  pipe anime */
+@keyframes pipe-anime {
+    0%{
+        left: 120%;
+        transform: rotate(0deg);
+    }
+
+    30%{
+        left: 120%;
+        transform: rotate(0deg);
+    }
+
+    33%{
+        left: 120%;
+        transform: rotate(0deg);
+    }
+
+    80%{
+        left: -80%;
+        transform: rotate(-120deg);
+    }
+
+    100%{
+        left:-120%;
+        transform: rotate(-120deg);
+    }
+}
